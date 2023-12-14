@@ -4,6 +4,96 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+    /* height: 100vh; */
+    overflow: hidden; 
+    
+    /* margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    background-image: url('bkgrd2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; */
     font-family: D-DIN-Bold;
+}
+
+header h1 {
+margin: 0;
+}
+
+header {
+
+    color: white;
+    padding: 1px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    z-index: 1000;
+}
+
+.sxlogo {
+    width: 210px;
+    height: auto;
+    padding: 32px 52px;
+    
+}
+
+.nav {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+}
+
+.image1 {
+    flex: 1;
+    background-image: url('bkgrd1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+
+.image2 {
+    flex: 1;
+    background-image: url('bkgrd2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
 }
 
