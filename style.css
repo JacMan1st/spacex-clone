@@ -1,6 +1,11 @@
 @font-face {
+
     font-family: D-DIN-Bold;
     src: url(D-DIN-Bold.otf);
+}
+@font-face {
+    font-family: D-DIN;
+    src: url(D-DIN.otf);
 }
 
 body {
@@ -24,15 +29,15 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed; */
-    font-family: D-DIN-Bold;
 }
 
 header h1 {
-margin: 0;
+    margin: 0;
 }
 
 header {
-
+    
+    font-family: D-DIN-Bold;
     color: white;
     padding: 1px;
     position: fixed;
@@ -97,3 +102,68 @@ a {
     height: 100vh;
 }
 
+
+
+.info1 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    /* margin: 20px; */
+    /* flex-wrap: wrap; */
+    /* padding: 10px 25px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    color: white;
+    font-family: D-DIN;
+    /* font-style: normal; */
+    font-size: 20px;
+    
+}
+
+.info2 {
+    font-family: D-DIN-Bold;
+    text-shadow: 0 0 2px #555;position: relative;
+    font-size: 48px;
+    /* line-height: 48px; */
+    color: #FFFFFF;
+    
+}
+
+.textBox {
+    text-align: left;
+    width: 50%;
+    position: absolute;
+    bottom: 15%;
+    left: 50px;
+}
+
+.learnTab {
+    position: relative;
+    min-width: 130px;
+    padding: 0 15px;
+    margin: 30px 0 0;
+    border: 2px solid #fff;
+    color: #FFFFFF;
+    
+    display: inline-block;
+    
+    /* cursor: pointer; */
+    overflow: hidden;
+}
+
+.learnTab .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: scale3d(1,0,1);
+    transform: scale3d(1,0,1);
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.19,1,.22,1);
+    transition: -webkit-transform .6s cubic-bezier(.19,1,.22,1);
+    transition: transform .6s cubic-bezier(.19,1,.22,1);
+    transition: transform .6s cubic-bezier(.19,1,.22,1),-webkit-transform .6s cubic-bezier(.19,1,.22,1);
+}
