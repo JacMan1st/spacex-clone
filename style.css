@@ -1,85 +1,9 @@
 @font-face {
-    font-family: Afacad;
-    src: url(Afacad-VariableFont_wght.ttf);
-}
-
-header {
-    background-color: #fff;
-    border-bottom: 1px solid #e8e7e6;
-    padding: 4px 16px;
-    position: relative;
+    font-family: D-DIN-Bold;
+    src: url(D-DIN-Bold.otf);
 }
 
 body {
-    
-    font-family: 'Afacad';
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-variation-settings: "wght" 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: D-DIN-Bold;
 }
 
-a {
-    text-decoration: none;
-}
-
-nav {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    flex-direction: row;
-    
-
-    padding: 3px, 6px, 2px;
-    color: black;
-    border-radius: 4px;
-    font-size: 12px;
-    /* padding: 4px, 16; */
-}
-
-#navLogo {
-    width: 156px;
-}
-
-nav2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-main {
-    background: url("https://www.autotrader.co.uk/home-pages/images/static/hpto/fallback-1024.jpg?v=2");
-    display: flex;      display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    margin: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.overlay {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-image: src="https://www.autotrader.co.uk/home-pages/images/static/hpto/fallback-1024.jpg?v=2" alt="";
-    box-sizing: border-box;
-    border-radius: 4px;
-    margin: 0;
-    padding: 20px;
-    background: white;
-    
-    
-
-}
-
-
-form {
-    max-width: 100%;
-}
-
-label {
-    display: block;
-    margin-top: 10px;
-}
