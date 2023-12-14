@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+</head>
+
+<body>
+    <header>    
+        <nav>
+            <a href="index.html">Cars</a>
+            <a href="vans.html">Vans</a>
+            <a href="bikes.html">Bikes</a>
+            <a href="motorhomes.html">Motorhomes</a>
+            <a href="caravant.html">Caravans</a>
+            <a href="trucks.html">Trucks</a>
+            <a href="farm.html">Farm</a>
+            <a href="plantt.html">Plant</a>
+
+        </nav>
+
+    <div >
+            <img id="navLogo" src="autologo.jpg" alt="AutoTrader Logo">
+    </div>
+            <br>
+        <nav2>
+            <a href="">Used cars</a>
+            <a href="">New cars</a>
+            <a href="">Sell your car</a>
+            <a href="">Value your car</a>
+            <a href="">Car reviews</a>
+            <a href="">Car leasing</a>
+            <a href="">Electric cars</a>
+            <a href="">Buy a car online</a>
+        </nav2>
+    </header>
+
+    <main>
+        <!-- <img src="https://www.autotrader.co.uk/home-pages/images/static/hpto/fallback-1024.jpg?v=2" alt=""> -->
+
+        <div class="overlay">
+            <form>
+                <h2>Find your perfect car</h2>
+            
+                <label for="postcode">Postcode:</label>
+                <input type="text" id="postcode" name="postcode" required>
+            
+                <label for="distance">Search Radius:</label>
+                <select id="distance" name="distance">
+                <option value="10">10 miles</option>
+                <option value="20">20 miles</option>
+                <option value="30">30 miles</option>
+                </select>
+            
+                <label for="make">Car Make:</label>
+                <select id="make" name="make" onchange="populateModels()">
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                
+                </select>
+            
+                <label for="model">Car Model:</label>
+                <select id="model" name="model">
+                
+                </select>
+            
+                <label for="minPrice">Min Price:</label>
+                <input type="number" id="minPrice" name="minPrice" placeholder="Enter min price">
+            
+                <label for="maxPrice">Max Price:</label>
+                <input type="number" id="maxPrice" name="maxPrice" placeholder="Enter max price">
+            
+                <input type="submit" value="Search">
+                <input type="reset" value="Reset Filters">
+                
+                <div id="more-options">
+                <!-- Additional options can be added here -->
+                </div>
+            </form>
+            
+        </div>
+    </main>
+</body>
+</html>
