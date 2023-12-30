@@ -115,9 +115,8 @@ nav > a {
 
 #hamburg {
     position: fixed;
-    /* padding-top: 45px; */
     margin-top: 42px;
-    /* margin-right: 2px; */
+    cursor: pointer;
 }
 
 #hamburg div {
@@ -130,7 +129,6 @@ nav > a {
 button{
     background-color: transparent;
     border-color: transparent
-
 }
 
 
@@ -225,21 +223,20 @@ video {
     margin-top: 325px;
 }
 
-/* upcoming launch */
+/* launch details */
 p {
-    padding-bottom: 16px;
-}
-#vidText {
-    padding-bottom: 16px;
+    /* padding-bottom: 16px; */
     font-size: 20px;
 }
+
+
 .mission {
-    top: -30px;
+    padding-bottom: 16px;
+    top: -14px;
     font-family: D-DIN-Bold;
     text-shadow: 0 0 2px #555;position: relative;
     font-size: 48px;
 }
-
 
 .watchBox {
     position: relative;
@@ -248,6 +245,7 @@ p {
     padding: 17.5px 15px;
     margin: -2px 0 7px;
     border: 2px solid #fff;
+    cursor: pointer;
 }
 
 #text {
@@ -260,23 +258,40 @@ p {
     color: #fff;
     text-decoration: none;    
 }
+.watchBox:hover #text {
+    background-color: white;
+    color: black;
+}
+.watchBox:hover {
+    background-color: white;
+    color: black;
+}
 
 .inDropdown {
     display: none;
     position: absolute;
     background-color: #555;
-    padding: 15px;
+    padding: 13.5px;
 }
 
 .inDropdown a {
-    color: white;
+    font-weight: bolder;
+    color: orange;
     text-decoration: none;
 }
 
-.dropdown:hover .inDropdown {
+.watchBox:hover .inDropdown {
     display: block;
+    top: 100%;
+    left: -2%;
+    color: white;
 }
 
+#ddtext {
+    display: inline;
+    white-space: nowrap;
+    cursor: default;
+}
 
 footer {
     font-family: D-DIN;
@@ -293,4 +308,21 @@ footer {
     justify-content: space-around;
     margin: 0;
     padding: 5px 21px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#info {
+    background-size: cover;
+    height: 100vh;
+}
+#dailup {
+    flex: 1;
+    background-image: url('dialup.gif');
+    background-color: rgb(44, 44, 44);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    margin-top: 50px;
 }
